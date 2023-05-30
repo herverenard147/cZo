@@ -1,0 +1,132 @@
+import 'package:flutter/material.dart';
+
+class Commande {
+  final String title, date, image;
+  final int phone, id, years, price;
+  final Color color;
+  Commande({
+    required this.id,
+    required this.title,
+    required this.price,
+    required this.date,
+    required this.phone,
+    required this.years,
+    required this.color,
+    required this.image,
+  });
+  String get priceString => '\$${price.toStringAsFixed(2)}';
+  String get imagePath => 'assets/$image.png';
+}
+
+List<Commande> commandes = [
+  Commande(
+    id: 1,
+    title: 'Brou',
+    price: 2500,
+    date: 'herve@gmail.com',
+    phone: 0909090909,
+    years: 23,
+    color: const Color.fromARGB(255, 4, 14, 32),
+    image: 'logo',
+  ),
+  Commande(
+    id: 2,
+    title: 'Jean',
+    price: 2500,
+    date: 'herve@gmail.com',
+    phone: 0909090909,
+    years: 23,
+    color: const Color.fromARGB(255, 175, 126, 19),
+    image: 'logo',
+  ),
+  Commande(
+    id: 3,
+    title: 'Namm',
+    price: 2500,
+    date: 'herve@gmail.com',
+    phone: 0909090909,
+    years: 23,
+    color: const Color.fromARGB(255, 170, 183, 209),
+    image: 'logo',
+  ),
+  Commande(
+    id: 4,
+    title: 'BJHj',
+    price: 2500,
+    date: 'herve@gmail.com',
+    phone: 0909090909,
+    years: 23,
+    color: const Color.fromARGB(255, 21, 117, 18),
+    image: 'logo',
+  ),
+  Commande(
+    id: 5,
+    title: 'Brou',
+    price: 2500,
+    date: 'herve@gmail.com',
+    phone: 0909090909,
+    years: 23,
+    color: const Color.fromARGB(255, 4, 14, 32),
+    image: 'logo',
+  ),
+  Commande(
+    id: 6,
+    title: 'Brou',
+    price: 2500,
+    date: 'herve@gmail.com',
+    phone: 0909090909,
+    years: 23,
+    color: const Color.fromARGB(255, 4, 14, 32),
+    image: 'logo',
+  ),
+  Commande(
+    id: 7,
+    title: 'Brou',
+    price: 2500,
+    date: 'herve@gmail.com',
+    phone: 0909090909,
+    years: 23,
+    color: const Color.fromARGB(255, 4, 14, 32),
+    image: 'logo',
+  ),
+  Commande(
+    id: 8,
+    title: 'Brou',
+    price: 2500,
+    date: 'herve@gmail.com',
+    phone: 0909090909,
+    years: 23,
+    color: const Color.fromARGB(255, 4, 14, 32),
+    image: 'logo',
+  ),
+  Commande(
+    id: 9,
+    title: 'Brou',
+    price: 2500,
+    date: 'herve@gmail.com',
+    phone: 0909090909,
+    years: 23,
+    color: const Color.fromARGB(255, 4, 14, 32),
+    image: 'logo',
+  ),
+  Commande(
+    id: 10,
+    title: 'Brou',
+    price: 2500,
+    date: 'herve@gmail.com',
+    phone: 0909090909,
+    years: 23,
+    color: const Color.fromARGB(255, 4, 14, 32),
+    image: 'logo',
+  ),
+  Commande(
+    id: 11,
+    title: 'Brou',
+    price: 2500,
+    date: 'herve@gmail.com',
+    phone: 0909090909,
+    years: 23,
+    color: const Color.fromARGB(255, 4, 14, 32),
+    image: 'logo',
+  ),
+];

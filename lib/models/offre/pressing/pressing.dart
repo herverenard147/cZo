@@ -1,0 +1,60 @@
+import 'package:flutter/material.dart';
+
+class Pressing {
+  final String title, date, image;
+  final int phone, id, years, price;
+  final Color color;
+  Pressing({
+    required this.id,
+    required this.title,
+    required this.price,
+    required this.date,
+    required this.phone,
+    required this.years,
+    required this.color,
+    required this.image,
+  });
+}
+
+List<Pressing> pressings = [
+  Pressing(
+    id: 1,
+    title: 'simple',
+    price: 500,
+    date: '5h - 6h',
+    phone: 0909090909,
+    years: 23,
+    color: const Color.fromARGB(255, 4, 14, 32),
+    image: 'images/logo.png',
+  ),
+  Pressing(
+    id: 2,
+    title: 'Complet',
+    price: 298,
+    date: 'herve@gmail.com',
+    phone: 0909090909,
+    years: 23,
+    color: const Color.fromARGB(255, 175, 126, 19),
+    image: 'images/logo.png',
+  ),
+  Pressing(
+    id: 3,
+    title: 'Namm',
+    price: 399,
+    date: 'herve@gmail.com',
+    phone: 0909090909,
+    years: 23,
+    color: const Color.fromARGB(255, 170, 183, 209),
+    image: 'images/logo.png',
+  ),
+  Pressing(
+    id: 4,
+    title: 'BJHj',
+    price: 2500,
+    date: 'herve@gmail.com',
+    phone: 0909090909,
+    years: 23,
+    color: const Color.fromARGB(255, 21, 117, 18),
+    image: 'images/logo.png',
+  ),
+];
