@@ -4,8 +4,11 @@ class Pressing {
   final String title, date, image;
   final int phone, id, years, price;
   final Color color;
+  int quantity;
+  bool isFavorite;
   Pressing({
     required this.id,
+    this.quantity = 1,
     required this.title,
     required this.price,
     required this.date,
@@ -13,12 +16,15 @@ class Pressing {
     required this.years,
     required this.color,
     required this.image,
+    required this.isFavorite,
   });
 }
 
 List<Pressing> pressings = [
   Pressing(
     id: 1,
+    quantity: 1,
+    isFavorite: false,
     title: 'simple',
     price: 500,
     date: '5h - 6h',
@@ -29,6 +35,8 @@ List<Pressing> pressings = [
   ),
   Pressing(
     id: 2,
+    quantity: 1,
+    isFavorite: false,
     title: 'Complet',
     price: 298,
     date: 'herve@gmail.com',
@@ -39,6 +47,8 @@ List<Pressing> pressings = [
   ),
   Pressing(
     id: 3,
+    quantity: 1,
+    isFavorite: false,
     title: 'Namm',
     price: 399,
     date: 'herve@gmail.com',
@@ -49,6 +59,8 @@ List<Pressing> pressings = [
   ),
   Pressing(
     id: 4,
+    quantity: 1,
+    isFavorite: false,
     title: 'BJHj',
     price: 2500,
     date: 'herve@gmail.com',

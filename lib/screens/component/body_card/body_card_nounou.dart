@@ -25,6 +25,7 @@ class BodyCardNounouAll extends StatelessWidget {
             nounou: nounous[index],
             press: () {
               Navigator.of(context).push(
+                
                 MaterialPageRoute(
                   builder: (context) => const DetailPageNounou(),
                 ),

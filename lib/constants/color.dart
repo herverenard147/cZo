@@ -16,6 +16,7 @@ class TColor {
   static Color get cardstore => const Color(0xFFFFECDF);
   static Color get kprimary => const Color(0xFFFF7643);
   static Color get ksecondary => const Color(0xff979797);
+  static Color get white => const Color(0xffffffff);
 
   static List<Color> get button =>
       const [Color.fromARGB(255, 110, 116, 113), Color(0xff00FF81)];
@@ -25,4 +26,4 @@ const defaultPadding = 20.0;
 
 class Fonts {}
 
-const tAnimation = Duration(milliseconds: 200); 
+const tAnimation = Duration(milliseconds: 200);

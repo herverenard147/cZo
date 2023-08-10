@@ -19,20 +19,12 @@ class BodyDetail extends StatelessWidget {
                   margin: EdgeInsets.only(top: size.height * 0.4),
                   height: size.height * 0.9,
                   decoration: const BoxDecoration(
-                    color: Colors.white,
+                    color: Colors.black,
                     borderRadius: BorderRadius.all(Radius.circular(20)),
                   ),
                 ),
                 Column(
-                  children: [
-                    Text(
-                      menage.title,
-                      style: const TextStyle(
-                          color: Colors.white,
-                          fontSize: 34,
-                          fontFamily: 'Roboto-Bold'),
-                    ),
-                  ],
+                  children: [Image(image: AssetImage(menage.image),),],
                 )
               ],
             ),

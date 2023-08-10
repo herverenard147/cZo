@@ -13,12 +13,12 @@ class BodyStore extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SafeArea(
+    return const SafeArea(
       child: Expanded(
         child: SingleChildScrollView(
-          physics: const BouncingScrollPhysics(),
+          physics:  BouncingScrollPhysics(),
           child: Column(
-            children: const [
+            children:  [
               SearchBoxStore(),
               PromoBanner(
                 title1: "Semaine Généreuse\n",

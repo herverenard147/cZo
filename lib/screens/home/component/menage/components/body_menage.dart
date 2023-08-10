@@ -19,9 +19,9 @@ class _BodyMenagePageState extends State<BodyMenagePage> {
             physics: const BouncingScrollPhysics(),
             child: Container(
               height: size.height * 0.80,
-              child: Column(
+              child: const Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
-                children: const[
+                children: [
                   BodyCardMenage(),
                 ],
               ),

@@ -10,25 +10,49 @@ AppBar HomeAppBarCustom(BuildContext context, {required String title1}) {
   final Size size = MediaQuery.of(context).size;
   List<Tab> categories = [
     const Tab(
-      child: Text("Tout"),
+      child: Text(
+        "Tout",
+        style: TextStyle(
+          fontSize: 15,
+          color: Colors.black,
+        ),
+      ),
     ),
     const Tab(
-      child: Text("Ménage"),
+      child: Text(
+        "Ménage",
+        style: TextStyle(
+          fontSize: 15,
+          color: Colors.black,
+        ),
+      ),
     ),
     const Tab(
-      child: Text("Pressing"),
+      child: Text(
+        "Pressing",
+        style: TextStyle(
+          fontSize: 15,
+          color: Colors.black,
+        ),
+      ),
     ),
     const Tab(
-      child: Text("Nounou"),
+      child: Text(
+        "Nounou",
+        style: TextStyle(
+          fontSize: 15,
+          color: Colors.black,
+        ),
+      ),
     ),
   ];
   return AppBar(
-    backgroundColor: TColor.beige,
+    backgroundColor: TColor.white,
     leading: IconButtomBar(
-      icon: Icons.notifications,
+      icon: Icons.menu,
       press: () {},
       size: size,
-      numItems: 3,
+      // numItems: 3,
     ),
     actions: [
       IconButtomBar(
@@ -38,7 +62,13 @@ AppBar HomeAppBarCustom(BuildContext context, {required String title1}) {
           Navigator.pushNamed(context, PayementPage.routeNames);
         },
         numItems: 0,
-      )
+      ),
+      IconButtomBar(
+        icon: Icons.notifications,
+        press: () {},
+        size: size,
+        numItems: 3,
+      ),
     ],
     elevation: 0,
     centerTitle: true,
@@ -60,7 +90,7 @@ AppBar HomeAppBarCustom(BuildContext context, {required String title1}) {
             text: "zO",
             style: TextStyle(
               fontSize: 30,
-              color: TColor.text,
+              color: TColor.font,
             ),
           ),
         ],

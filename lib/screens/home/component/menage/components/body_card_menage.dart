@@ -16,7 +16,7 @@ class BodyCardMenage extends StatelessWidget {
           gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
             crossAxisCount: 2,
             crossAxisSpacing: 6,
-            childAspectRatio: 0.8,
+            childAspectRatio: 1,
             mainAxisSpacing: 3,
           ),
           scrollDirection: Axis.vertical,
@@ -27,8 +27,7 @@ class BodyCardMenage extends StatelessWidget {
               Navigator.of(context).push(
                 MaterialPageRoute(
                   builder: (context) => DetailPage(
-                  menage: menages[index],
-
+                    menage: menages[index],
                   ),
                 ),
               );

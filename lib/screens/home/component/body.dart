@@ -11,8 +11,8 @@ class BodyHomePage extends StatefulWidget {
 class _BodyHomePageState extends State<BodyHomePage> {
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: const [
+    return const Column(
+      children: [
         Expanded(
           child: BodyCategoriesHomePage(),
         ),

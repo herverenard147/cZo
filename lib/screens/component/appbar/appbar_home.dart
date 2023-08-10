@@ -6,7 +6,7 @@ import 'package:test/screens/payement/payement.dart';
 AppBar HomeAppBar(BuildContext context, {required String title1}) {
   final Size size = MediaQuery.of(context).size;
   return AppBar(
-    backgroundColor: TColor.beige,
+    backgroundColor: TColor.white,
     leading: IconButtomBar(
       icon: Icons.notifications,
       press: () {},

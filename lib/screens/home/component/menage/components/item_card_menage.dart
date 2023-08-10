@@ -24,7 +24,9 @@ class ItemCardMenage extends StatelessWidget {
             width: size.width * 0.5,
             padding: const EdgeInsets.all(10),
             decoration: BoxDecoration(
-              color: Colors.black,
+              image: DecorationImage(
+                  image: AssetImage(menage.image), fit: BoxFit.cover,),
+              // color: Colors.black,
               borderRadius: BorderRadius.circular(16),
             ),
             child: Column(

@@ -20,7 +20,7 @@ class BodyCardMenageAll extends StatelessWidget {
             mainAxisSpacing: 0.0,
           ),
           scrollDirection: Axis.horizontal,
-          itemCount: menages.length,
+          itemCount: 4,
           itemBuilder: (context, index) => ItemCardMenage(
             menage: menages[index],
             press: () {

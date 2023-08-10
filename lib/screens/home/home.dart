@@ -24,9 +24,7 @@ class _HomePageState extends State<HomePage> {
     PressingPage(),
     NounouPage(),
   ];
-  // User? user = FirebaseAuth.instance.currentUser;
-  // UserModel loggedInUser = UserModel();
-
+  
   // @override
   // void initState() {
   //   super.initState();
