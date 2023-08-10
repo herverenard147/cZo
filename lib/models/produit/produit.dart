@@ -4,12 +4,14 @@ class Produit {
   final List<String> color;
   final int id;
   final double raiting, price;
-  final bool isfavorite, isPopular;
+  bool isFavorite, isPopular;
+  int quantity;
   Produit( {
+    this.quantity = 1,
     required this.marque,
     required this.type,
     required this.id,
-    required this.isfavorite,
+    required this.isFavorite,
     required this.isPopular,
     required this.description,
     required this.title,
@@ -24,7 +26,7 @@ class Produit {
 
   factory Produit.fromMap(map) {
     return Produit(
-      isfavorite: map["isfavorite"],
+      isFavorite: map["isFavorite"],
       marque: map["marque"],
       isPopular: map["isPopular"],
       description: map["description"],
@@ -40,7 +42,7 @@ class Produit {
 
   Map<String, dynamic> toMap() {
     return {
-      "isfavorite": isfavorite,
+      "isFavorite": isFavorite,
       "isPopular": isPopular,
       "description": description,
       "uid": id,
@@ -59,6 +61,7 @@ List<Produit> produits = [
   Produit(
     id: 1,
     title: 'Maxi',
+    quantity: 1,
     price: 2500,
     // date: 'herve@gmail.com',
     color: [
@@ -73,11 +76,12 @@ List<Produit> produits = [
     ],
     description: description,
     isPopular: true,
-    isfavorite: true,
+    isFavorite: true,
     raiting: 4.8, marque: 'Gucci', type: 'detergent',
   ),
   Produit(
     id: 2,
+    quantity: 1,
     title: 'Maxi',
     price: 2500,
     // date: 'herve@gmail.com',
@@ -93,11 +97,12 @@ List<Produit> produits = [
     ],
     description: description,
     isPopular: true,
-    isfavorite: true,
+    isFavorite: true,
     raiting: 0, marque: 'Louboutin', type: 'desinfectant',
   ),
   Produit(
     id: 3,
+    quantity: 1,
     title: 'Maxi',
     price: 2500,
     // date: 'herve@gmail.com',
@@ -113,7 +118,7 @@ List<Produit> produits = [
     ],
     description: description,
     isPopular: true,
-    isfavorite: false,
+    isFavorite: false,
     raiting: 0, 
     marque: 'martini',
     type: 'detergent',

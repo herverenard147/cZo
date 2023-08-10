@@ -21,7 +21,10 @@ class Fille {
       years;
   final int phone, id, old, price;
   final Color color;
+  int quantity;
   Fille({
+    required this.id,
+    this.quantity = 1,
     required this.email,
     required this.sexe,
     required this.nationality,
@@ -33,7 +36,6 @@ class Fille {
     required this.diplome,
     required this.lieudenaissance,
     required this.pieceidentity,
-    required this.id,
     required this.name,
     required this.lastname,
     required this.description,
@@ -55,6 +57,7 @@ class Diplome {}
 List<Fille> filles = [
   Fille(
     id: 1,
+    quantity: 1,
     name: 'Oasis',
     description:
         "The Oasis chair is the perfect spot to kick back and unwind after a "
@@ -86,6 +89,7 @@ List<Fille> filles = [
   ),
   Fille(
     id: 2,
+    quantity: 1,
     name: 'boucle',
     description:
         "The Oasis chair is the perfect spot to kick back and unwind after a "
@@ -117,6 +121,7 @@ List<Fille> filles = [
   ),
   Fille(
     id: 3,
+    quantity: 1,
     name: 'game',
     description:
         "The Oasis chair is the perfect spot to kick back and unwind after a "
@@ -148,6 +153,7 @@ List<Fille> filles = [
   ),
   Fille(
     id: 4,
+    quantity: 1,
     name: 'Oasis',
     description:
         "The Oasis chair is the perfect spot to kick back and unwind after a "
@@ -179,6 +185,7 @@ List<Fille> filles = [
   ),
   Fille(
     id: 5,
+    quantity: 1,
     name: 'Oasis',
     description:
         "The Oasis chair is the perfect spot to kick back and unwind after a "
