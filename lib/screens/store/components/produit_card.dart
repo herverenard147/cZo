@@ -66,7 +66,7 @@ class ProductCard extends StatelessWidget {
                     ),
                     child: Image.asset(
                       "assets/icons/icons8-heart-32.png",
-                      color: produit.isfavorite
+                      color: produit.isFavorite
                           ? const Color(0xFFFF4848)
                           : const Color(0xffDBDEE4),
                     ),

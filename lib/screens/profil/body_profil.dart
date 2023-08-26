@@ -102,7 +102,7 @@ class _BodyProfilState extends State<BodyProfil> {
         ),
         ProfilMenu(
           icon: Icons.logout_outlined,
-          title: "Deconnexio",
+          title: "Deconnexion",
           press: () {},
           isactivate: false,
         ),

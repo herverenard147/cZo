@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:test/constants/color.dart';
-import 'package:test/models/commande/produit/produit.dart';
+import 'package:test/models/produit/produit.dart';
 
 class ProductCard extends StatelessWidget {
   const ProductCard({
@@ -66,7 +66,7 @@ class ProductCard extends StatelessWidget {
                     ),
                     child: Image.asset(
                       "assets/icons/icons8-heart-32.png",
-                      color: produit.isfavorite
+                      color: produit.isFavorite
                           ? const Color(0xFFFF4848)
                           : const Color(0xffDBDEE4),
                     ),
