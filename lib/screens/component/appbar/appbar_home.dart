@@ -29,7 +29,7 @@ AppBar HomeAppBar(BuildContext context, {required String title1}) {
       text: TextSpan(
         style: Theme.of(context)
             .textTheme
-            .bodyText1
+            .bodyLarge
             ?.copyWith(fontWeight: FontWeight.bold),
         children: [
           TextSpan(

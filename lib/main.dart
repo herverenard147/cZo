@@ -19,10 +19,10 @@ class MyApp extends StatefulWidget {
   State<MyApp> createState() => _MyAppState();
 }
 
-bool _iconBool = false;
+// bool _iconBool = false;
 
-IconData _iconLight = Icons.wb_sunny;
-IconData _iconDark = Icons.nights_stay;
+// IconData _iconLight = Icons.wb_sunny;
+// IconData _iconDark = Icons.nights_stay;
 
 class _MyAppState extends State<MyApp> {
   // This widget is the root of your application.
@@ -34,6 +34,7 @@ class _MyAppState extends State<MyApp> {
       theme: CTheme.lightTeme,
       initialRoute: HomePage.routeNames,
       routes: routes,
+      
     );
   }
 }

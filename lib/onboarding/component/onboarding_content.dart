@@ -20,7 +20,7 @@ class OnboardingContent extends StatelessWidget {
           text: TextSpan(
             style: Theme.of(context)
                 .textTheme
-                .bodyText1
+                .bodyLarge
                 ?.copyWith(fontWeight: FontWeight.bold),
             children: [
               TextSpan(

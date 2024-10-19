@@ -21,7 +21,6 @@ class CTheme {
     fontFamily: "Roboto",
     scaffoldBackgroundColor: TColor.white,
     textTheme: textThemeLight(),
-    backgroundColor: TColor.white,
     visualDensity: VisualDensity.adaptivePlatformDensity,
   );
   static ThemeData darkTeme = ThemeData(
@@ -30,26 +29,25 @@ class CTheme {
     fontFamily: "Roboto",
     scaffoldBackgroundColor: TColor.white,
     textTheme: textThemeDark(),
-    backgroundColor: TColor.white,
     visualDensity: VisualDensity.adaptivePlatformDensity,
   );
 }
 
 TextTheme textThemeLight() {
   return TextTheme(
-    bodyText1: TextStyle(
+    bodyLarge: TextStyle(
       color: TColor.subtitle,
     ),
-    bodyText2: TextStyle(color: TColor.subtitle),
+    bodyMedium: TextStyle(color: TColor.subtitle),
   );
 }
 
 TextTheme textThemeDark() {
   return TextTheme(
-    bodyText1: TextStyle(
+    bodyLarge: TextStyle(
       color: TColor.subtitle,
     ),
-    bodyText2: TextStyle(color: TColor.subtitle),
+    bodyMedium: TextStyle(color: TColor.subtitle),
   );
 }
 

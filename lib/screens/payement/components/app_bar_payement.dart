@@ -26,7 +26,7 @@ AppBar PayementAppBar(BuildContext context,
       text: TextSpan(
         style: Theme.of(context)
             .textTheme
-            .bodyText1
+            .bodyLarge
             ?.copyWith(fontWeight: FontWeight.bold),
         children: [
           TextSpan(
